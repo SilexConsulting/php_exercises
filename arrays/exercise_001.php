@@ -7,7 +7,7 @@ $numbers = array(2,4,6,8,10,12);
  */
 $total = my_array_sum($numbers);
 
-function my_array_sum()
+function my_array_sum($numbers)
 {
 	;
 }
