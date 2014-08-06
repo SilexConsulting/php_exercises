@@ -12,5 +12,18 @@ var_dump(my_array_union($a1, $a2));
  */
 
 function my_array_union($array1, $array2) {
+  $merged = array();
 
+
+  foreach($array1 as $key => $value){
+    if (!in_array($value, $merged)) {
+      $merged[] = $array1[$key];
+    }
+  }
+  foreach($array2 as $key => $value){
+    if (!in_array($value, $merged)) {
+      $merged[] = $array2[$key];
+    }
+  }
+  return $merged;
 }
