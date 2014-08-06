@@ -12,4 +12,12 @@ $numbers = array(
  * Create a new array that, for each array in $numbers, counts the number of elements and records it.
  *
  * eg the output should be (5,4,3,2,1)
- */
+ */$count = array();
+
+foreach($numbers as $array){
+  for($i = 0; $i < count($array); $i++){
+    $count = count($array);
+  }
+  var_dump($count);
+}
+

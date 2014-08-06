@@ -18,5 +18,9 @@ var_dump(array_swap_first_last($numbers3));
 
  function array_swap_first_last($array)
  {
+   $last = $array[0];
+   $array[0] = $array[count($array) - 1];
+   $array[count($array) - 1] = $last;
 
+     return $array;
  }

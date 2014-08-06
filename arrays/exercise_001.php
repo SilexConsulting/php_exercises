@@ -9,5 +9,10 @@ $total = my_array_sum($numbers);
 
 function my_array_sum($numbers)
 {
-	;
+    $sum = 0;
+	foreach($numbers as $number){
+      $sum += $number;
+    }
+  return $sum;
 }
+echo $total;
