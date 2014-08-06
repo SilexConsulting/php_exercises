@@ -14,6 +14,15 @@ var_dump(my_array_diff($a1, $a2));
  * Avoid array_*() functions.
  */
 
-function my_array_diff($a1, $a2) {
+function my_array_diff($array1, $array2) {
 
+  $output = array();
+
+  foreach($array1 as $item){
+    if(!in_array($item, $array2)){
+      $output[] = $item;
+    }
+  }
+
+  return $output;
 }

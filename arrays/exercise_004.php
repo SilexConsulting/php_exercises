@@ -12,5 +12,11 @@ var_dump(my_array_reverse($numbers));
 
 function my_array_reverse($array)
 {
+  foreach($array as $item){
+    $new_array[] = array_pop($array);
+    echo $item;
+  }
+
+return $new_array;
 
 }

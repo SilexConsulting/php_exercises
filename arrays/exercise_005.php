@@ -9,3 +9,21 @@ $numbers = array(
 /**
  * Sum all the elements of all the arrays (hint: the function you wrote in Exercise 001 might help).
  */
+$sum = 0;
+
+foreach($numbers as $array){
+  foreach($array as $item){
+    $sum = my_array_sum($array);
+    $total =+ $sum;
+  }
+  echo $total . "</br>";
+}
+
+function my_array_sum($numbers)
+{
+  $sum = 0;
+  foreach($numbers as $number){
+    $sum += $number ;
+  }
+  return $sum;
+}

@@ -13,5 +13,12 @@ var_dump(my_array_intersection($a1, $a2));
 
 function my_array_intersection($array1, $array2)
 {
+  $intersection = array();
+for($i = 0; $i < count($array1); $i++){
+  if(in_array($array1[$i], $array2)){
+    $intersection[] = $array1[$i];
+  }
+}
+return $intersection;
 
 }
