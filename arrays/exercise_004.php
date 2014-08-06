@@ -2,11 +2,13 @@
 
 $numbers = array(10,20,30,40,50,60,70,80);
 
-/**
- * Reverse the array. Do not use array_reverse().
- */
+var_dump(my_array_reverse($numbers));
 
-$numbers = my_array_reverse($numbers);
+/**
+ * Write a function that accepts an array, reverses the order of its elements, and returns the modified array.
+ *
+ * Do not use array_reverse().
+ */
 
 function my_array_reverse($array)
 {
